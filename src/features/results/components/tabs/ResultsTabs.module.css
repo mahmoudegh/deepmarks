@@ -1,0 +1,21 @@
+@reference "../../../../styles/tailwind-reference.css";
+.results__tabs {
+  @apply bg-white overflow-y-auto;
+  height: calc(100vh - 79px);
+}
+.results__tabs .tabs {
+  @apply relative;
+}
+.results__tabs-list {
+  @apply sticky top-0 z-10 p-6 bg-white;
+}
+.results__tabs-btn-wrapper {
+  @apply rounded-lg border border-gray-300 w-full max-w-full flex overflow-hidden min-h-fit;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}
+.results__tabs-btn {
+  @apply w-1/2  cursor-pointer text-gray-500 text-[14px] font-medium leading-5 py-2.5 px-4 bg-white data-[state=active]:bg-gray-50;
+}
+.sidebar__dots {
+  @apply absolute top-[50%] right-2;
+}

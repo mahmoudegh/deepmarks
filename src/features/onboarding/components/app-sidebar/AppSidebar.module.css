@@ -1,0 +1,54 @@
+@reference "../../../../styles/tailwind-reference.css";
+
+.sidebar {
+  @apply h-full bg-[#F9F9FA] border-[0.5px] border-r-0 border-t-0 border-b-0 border-l-[#DCDCDC] relative;
+}
+.sidebar__dots {
+  @apply absolute top-[50%] left-2;
+}
+.sidebar__header {
+  @apply h-[79px] w-full py-[17px] px-6 flex items-center justify-between;
+}
+.sidebar__help {
+  @apply text-sm font-medium text-[#0D0B26];
+}
+.sidebar__close {
+  @apply cursor-pointer;
+}
+.sidebar__content {
+  @apply px-6 pb-6 flex flex-col gap-6 overflow-y-auto;
+  height: calc(100% - 79px);
+}
+.sidebar__video-wrapper {
+}
+.sidebar__video {
+  @apply w-full rounded-xl aspect-video;
+}
+.sidebar__note {
+  @apply py-4 px-6 flex flex-col gap-1.5 rounded-xl border border-[#0000001A] bg-white;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+}
+.sidebar__note-title {
+  @apply flex gap-3 text-[16px] font-semibold leading-[100%];
+}
+.sidebar__note-text {
+  @apply text-sm font-normal text-[#000000] leading-[19px];
+}
+.sidebar__resources {
+  @apply flex flex-col gap-4;
+}
+.sidebar__resources h6 {
+  @apply text-[16px] text-[#0D0B26] font-medium leading-5;
+}
+.sidebar__resources ul {
+  @apply flex flex-col gap-4;
+}
+.sidebar__resources ul li {
+  @apply flex items-start gap-3 pl-4;
+}
+.sidebar__resources ul li img {
+  @apply mt-[5px];
+}
+.sidebar__resources ul li a {
+  @apply text-sm font-medium leading-5 text-[#8C8C8C];
+}

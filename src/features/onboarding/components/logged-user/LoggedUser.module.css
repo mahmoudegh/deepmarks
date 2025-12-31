@@ -1,0 +1,44 @@
+@reference "../../../../styles/tailwind-reference.css";
+.user__dropdown {
+  @apply flex justify-between items-center gap-4 cursor-pointer border border-[#E0E0E0] border-t-0 border-b-0 border-l-0 outline-0 shadow-none;
+}
+.user__dropdown-btn {
+  @apply flex  items-center gap-3;
+}
+.user__dropdown-avatar {
+  @apply h-10 w-10 mr-5 md:mr-0 rounded-full;
+}
+.user__dropdown-avatar-fallback {
+  @apply h-10 w-10 flex justify-center items-center text-white text-sm;
+}
+.user__dropdown-avatar-fallback-sm {
+  @apply h-7 w-7 flex justify-center items-center text-white text-[10px];
+}
+.user__dropdown-avatar-sm {
+  @apply h-7 w-7;
+}
+.user__dropdown-data {
+  @apply hidden md:flex flex-col items-start;
+}
+.user__dropdown-data-sm {
+  @apply flex flex-col items-start;
+}
+.user__dropdown-name {
+  @apply text-gray-900 text-sm font-semibold leading-5;
+}
+.user__dropdown-name-sm {
+  @apply text-xs;
+}
+.user__dropdown-email {
+  @apply text-gray-600 text-sm leading-5 font-normal;
+}
+.user__dropdown-email-sm {
+  @apply text-xs;
+}
+.user-menu {
+  @apply bg-white rounded-lg border border-gray-200 w-[240px] p-0;
+  box-shadow: 0px 4px 6px -2px #0a0d1208, 0px 12px 16px -4px #0a0d1214;
+}
+.menu-item {
+  @apply cursor-pointer w-full text-gray-700 flex items-center gap-3 text-sm leading-5 font-medium px-[16px] py-[10px] hover:bg-gray-100;
+}

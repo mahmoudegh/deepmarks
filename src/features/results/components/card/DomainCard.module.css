@@ -1,0 +1,48 @@
+@reference "../../../../styles/tailwind-reference.css";
+.Result__card {
+  @apply bg-white border border-gray-100 rounded-[14px] p-6 flex flex-col justify-between gap-4;
+}
+.card__header {
+  @apply flex items-center justify-between;
+}
+.card__header h3 {
+  @apply text-gray-900 font-medium text-[16px] leading-6 whitespace-nowrap;
+}
+.images__wrapper {
+  @apply flex items-center justify-between gap-1;
+}
+.card__header img {
+  @apply cursor-pointer;
+}
+.card__label {
+  @apply bg-[#F5F5FF] rounded-2xl py-[2px] px-[10px] flex items-center justify-center font-medium text-[14px] leading-5 w-fit;
+}
+.domain__name {
+  @apply text-gray-900 font-semibold text-2xl leading-10;
+}
+.available__domains {
+  @apply flex items-center gap-2;
+}
+.available__domains-wrapper {
+  @apply bg-[#ECFDF3] py-[4px] px-[10px] rounded-2xl w-fit flex items-center justify-between gap-2;
+}
+.domain {
+  @apply bg-white border border-[#A6F4C5] rounded-2xl py-[2px] px-[8px] text-[#027A48] text-xs leading-[18px] font-medium;
+}
+.available {
+  @apply text-[#027A48] text-xs leading-[18px] font-medium;
+}
+.more {
+  @apply text-[#404040] text-xs leading-[18px] font-medium;
+}
+.card__buttons {
+  @apply flex items-center justify-between gap-2;
+}
+.buy__domain {
+  @apply h-[48px] w-1/2 text-white cursor-pointer rounded-lg border border-[#00005C] py-[12px] px-[20px] gap-[8px] items-center justify-center text-[16px] font-semibold leading-6;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}
+.preview {
+  @apply h-[48px] bg-white flex-1 cursor-pointer rounded-lg py-[12px] px-[20px] gap-[8px] items-center justify-center text-gray-700 text-[16px] font-semibold leading-6 border border-gray-300;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}

@@ -1,0 +1,24 @@
+@reference "../../../../styles/tailwind-reference.css";
+
+.answer {
+  @apply max-w-4xl mx-auto border-[0.5px] border-[#DCDCDC] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.05)] mt-6;
+  width: calc(100% - 64px);
+}
+.answer__ai-suggestions {
+  @apply px-4 py-3 border border-b-[#DCDCDC] border-t-0 border-l-0 border-r-0;
+}
+.answer__textarea-wrapper {
+  /* @apply relative; */
+}
+.answer__textarea {
+  @apply px-5 py-4 focus-visible:ring-0 resize-none border-0;
+}
+.answer__attach-btn {
+  @apply h-7 gap-1 text-xs cursor-pointer rounded-full border-[0.54px] border-[#00000033];
+}
+.answer__footer {
+  @apply w-full px-5 my-3 flex items-center justify-between;
+}
+.answer__note {
+  @apply text-center mt-[26px] mb-6 text-[13px] mx-8;
+}

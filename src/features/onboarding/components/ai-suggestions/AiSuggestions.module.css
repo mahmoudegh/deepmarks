@@ -1,0 +1,16 @@
+@reference "../../../../styles/tailwind-reference.css";
+.answer__ai-suggestions {
+  @apply px-4 py-3 border border-b-[#DCDCDC] border-t-0 border-l-0 border-r-0;
+}
+.answer__ai-suggestions-title {
+  @apply flex gap-1;
+}
+.answer__ai-suggestions-title h6 {
+  @apply text-[10px] font-bold;
+}
+.answer__ai-suggestions-wrapper {
+  @apply flex gap-2 mt-2 overflow-x-auto  whitespace-nowrap;
+}
+.answer__ai-suggestions-pills {
+  @apply min-w-fit flex justify-center items-center rounded-full py-1.5 px-4 cursor-pointer text-sm;
+}

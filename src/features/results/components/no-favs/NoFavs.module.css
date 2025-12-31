@@ -1,0 +1,41 @@
+@reference "../../../../styles/tailwind-reference.css";
+.no__favs {
+  @apply bg-[#F9F9FA] w-full py-6 px-8;
+  height: calc(100vh - 79px);
+  overflow-y: auto;
+  background-image: url("@/assets/circles_bg.svg");
+  background-position: center;
+  background-position: center calc((100vh - 79px) * 0.03);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header {
+  @apply flex justify-between items-center mt-4;
+}
+.header .title h3 {
+  @apply text-gray-900 font-medium text-[28px] leading-9;
+}
+.header .title p {
+  @apply text-gray-600 leading-5 text-[14px];
+}
+.header .actions {
+  @apply flex items-center justify-between gap-3;
+}
+.header .actions button {
+  @apply bg-white rounded-lg h-12 border text-gray-300 text-[16px] leading-6 font-semibold border-gray-200 py-3 px-5;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}
+.content {
+  @apply flex flex-col justify-center items-center gap-3 w-full mx-auto mt-[100px];
+}
+.content h3 {
+  @apply text-gray-900 font-semibold text-[24px] leading-11;
+}
+.content p {
+  @apply text-gray-600 font-normal text-[20px] leading-[30px];
+}
+.content button {
+  @apply bg-white rounded-lg h-[52px] border text-gray-700 text-[18px] leading-7 font-semibold border-gray-300 py-3 px-5;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
+}
