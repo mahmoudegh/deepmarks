@@ -11,7 +11,9 @@ import {
 
 const ResultsPage: FC = () => {
   const sidebarRef = useRef<ImperativePanelHandle>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isCollapsed, setIsCollapsed] = useState(true);
+  console.log(isCollapsed);
 
   return (
     <>

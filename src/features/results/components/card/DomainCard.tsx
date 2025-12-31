@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./DomainCard.module.css";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

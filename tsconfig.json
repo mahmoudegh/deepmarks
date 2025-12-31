@@ -9,5 +9,9 @@
     "paths": {
       "@/*": ["./src/*"]
     }
+    // "jsx": "react-jsx",
+    // "noUnusedLocals": false,
+    // "noUnusedParameters": false,
+    // "strict": false
   }
 }

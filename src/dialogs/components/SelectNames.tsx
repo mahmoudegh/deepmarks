@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,6 +9,13 @@ import {
 import { useDialog } from "@/dialogs/useDialog";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
+
+type DialogItem = {
+  id: string | number;
+  isFavName: boolean;
+  domain_name: string;
+  label: string;
+};
 
 const SelectNames = () => {
   const { activeDialog, closeDialog, openDialog, dialogData } = useDialog();
@@ -32,8 +39,8 @@ const SelectNames = () => {
         </div>
         <div className="max-h-[375px] overflow-y-auto no-scrollbar flex flex-col gap-4 pb-2 bg-white">
           {dialogData
-            ?.filter((item) => item.isFavName)
-            .map((item) => (
+            ?.filter((item: DialogItem) => item.isFavName)
+            .map((item: DialogItem) => (
               <Label
                 key={item.id}
                 className="cursor-pointer h-[72px] flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Results.module.css";
 import { assets } from "@/assets/assets";
 import HorizontalFilter from "../filter/horizontal-filter/HorizontalFilter";
