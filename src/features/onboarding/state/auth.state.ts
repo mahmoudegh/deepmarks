@@ -17,7 +17,7 @@ export type AuthState = {
 };
 
 const initialAuthState: AuthState = {
-  isLoggedIn: false,
+  isLoggedIn: true,
   user: null,
   loginMode: "",
 };

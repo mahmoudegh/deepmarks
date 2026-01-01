@@ -15,14 +15,23 @@ import { RefreshCw } from "lucide-react";
 
 const INITIAL_VISIBLE = 3;
 
+type GenerateSimilarData = {
+  id: string | number;
+};
+
 const GenerateSimilar = () => {
   const { activeDialog, closeDialog, dialogData } = useDialog();
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const location = useLocation();
 
+  const generateData =
+    dialogData && typeof dialogData === "object" && "id" in dialogData
+      ? (dialogData as GenerateSimilarData)
+      : null;
+
   const item = useMemo(
-    () => Domains.find((d) => d.id === dialogData?.id),
-    [dialogData?.id]
+    () => Domains.find((d) => d.id === generateData?.id),
+    [generateData?.id]
   );
 
   // close modal on route change
@@ -74,13 +83,11 @@ const GenerateSimilar = () => {
           </h3>
 
           <p className="text-gray-600 text-[14px] leading-5 max-w-md">
-            This name works because - We’re glad to have you onboard. Here are
-            some quick tips to get you up and running.
+            This name works because - We’re glad to have you onboard.
           </p>
 
           <div className="w-full h-[0.5px] bg-gray-300 mt-5 mb-3" />
 
-          {/* header */}
           <div className="flex justify-between items-center">
             <span className="text-gray-900 font-medium text-[16px] leading-6">
               Similar names
@@ -91,14 +98,13 @@ const GenerateSimilar = () => {
               disabled={!canGenerateMore}
               size="lg"
               variant="outline"
-              className="cursor-pointer bg-white rounded-lg h-12 border text-gray-700 text-[16px] leading-6 font-semibold border-gray-300 py-3 px-5 shadow-[0px_1px_2px_0px_#0a0d120d] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="cursor-pointer bg-white rounded-lg h-12 border text-gray-700"
             >
               <RefreshCw className="w-5 h-5 mr-2" />
               Generate more
             </Button>
           </div>
 
-          {/* list */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-3">
             {item.similar.slice(0, visibleCount).map((similar_item) => (
               <DomainCard
