@@ -17,15 +17,15 @@ export type AuthState = {
 };
 
 const initialAuthState: AuthState = {
-  // isLoggedIn: false,
-  // user: null,
-  isLoggedIn: true,
-  user: {
-    name: "Mahmoud Galal Hussein",
-    first_name: "Mahmoud",
-    last_name: "Galal",
-    email: "mahmoudegh8@gmail.com",
-  },
+  isLoggedIn: false,
+  user: null,
+  // isLoggedIn: true,
+  // user: {
+  //   name: "Mahmoud Galal Hussein",
+  //   first_name: "Mahmoud",
+  //   last_name: "Galal",
+  //   email: "mahmoudegh8@gmail.com",
+  // },
   loginMode: "",
 };
 
