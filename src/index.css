@@ -87,3 +87,7 @@ input::-moz-selection {
     @apply bg-background text-foreground;
   }
 } */
+.main-sidebar-trigger svg {
+  height: 24px;
+  width: 24px;
+}

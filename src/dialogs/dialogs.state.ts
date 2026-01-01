@@ -48,7 +48,10 @@ export type DialogDataMap = {
   enterDomain: null;
   selectNames: DialogItem[];
   shareList: (string | number)[];
-  createPassword: { email: string };
+  createPassword: {
+    email: string;
+    type: string;
+  };
   passwordSuccess: null;
 };
 

@@ -161,8 +161,8 @@ const MainSidebar = () => {
       </SidebarContent>
       <SidebarFooter className="px-4 py-0">
         <div className="flex items-start justify-between py-4 border border-t-gray-200 border-l-0 border-r-0 border-b-0">
-          <div className="flex  items-center gap-3">
-            <Avatar className="h-10 w-10 mr-5 md:mr-0 rounded-full">
+          <div className="flex  items-center gap-2">
+            <Avatar className="h-10 w-10  rounded-full">
               <AvatarImage src={userInfo?.avatar} />
               <AvatarFallback className="h-10 w-10 flex justify-center items-center text-white text-sm bg-primary">
                 {(userInfo?.name ?? "")
@@ -172,7 +172,7 @@ const MainSidebar = () => {
                   .join("")}
               </AvatarFallback>
             </Avatar>
-            <div className="hidden md:flex flex-col items-start">
+            <div className="flex flex-col items-start">
               <div className="text-gray-900 text-sm font-semibold leading-5">
                 {userInfo?.name}
               </div>

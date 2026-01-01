@@ -36,7 +36,7 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Name */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
           <p className="text-gray-700 font-semibold text-sm leading-5">Name</p>
         </div>
@@ -78,9 +78,9 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Email */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
-          <p className="text-gray-700 font-semibold text-sm leading-5">
+          <p className="text-gray-700 font-semibold text-sm leading-5 whitespace-nowrap">
             Email address
           </p>
         </div>
@@ -96,12 +96,12 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Photo */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
-          <p className="text-gray-700 font-semibold text-sm leading-5">
+          <p className="text-gray-700 font-semibold text-sm leading-5 whitespace-nowrap">
             Your photo
           </p>
-          <p className="text-sm text-gray-600 leading-5">
+          <p className="text-sm text-gray-600 leading-5 whitespace-nowrap lg:whitespace-normal">
             This will be displayed on your profile.
           </p>
         </div>
@@ -118,7 +118,7 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Country */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
           <p className="text-gray-700 font-semibold text-sm leading-5">
             Country
@@ -135,7 +135,7 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Timezone */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
           <p className="text-gray-700 font-semibold text-sm leading-5">
             Timezone
@@ -152,10 +152,10 @@ const UserDetails = () => {
       <Separator className="bg-gray-200" />
 
       {/* Bio */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
           <p className="text-gray-700 font-semibold text-sm leading-5">Bio</p>
-          <p className="text-sm text-gray-600 leading-5">
+          <p className="text-sm text-gray-600 leading-5 whitespace-nowrap lg:whitespace-normal">
             Write a short introduction.
           </p>
         </div>

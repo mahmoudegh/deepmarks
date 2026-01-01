@@ -9,8 +9,8 @@ const AccountSettingsPage: FC = () => {
   return (
     <div>
       <div className="flex w-full items-center gap-2">
-        <SidebarTrigger className="cursor-pointer md:hidden" />
-        <h3 className="text-gray-900 font-semibold text-[30px] leading-8">
+        <SidebarTrigger className="cursor-pointer md:hidden main-sidebar-trigger" />
+        <h3 className="text-gray-900 font-semibold text-[30px] leading-8 mb-1">
           Settings
         </h3>
       </div>

@@ -23,9 +23,9 @@ const UserPassword = () => {
       <Separator className="bg-gray-200" />
 
       {/* Email */}
-      <div className="grid grid-cols-3 gap-6 max-w-4xl">
+      <div className="grid grid-cols-3 lg:gap-6 gap-3 max-w-4xl">
         <div>
-          <p className="text-gray-700 font-semibold text-sm leading-5">
+          <p className="text-gray-700 font-semibold text-sm leading-5 whitespace-nowrap">
             Email address
           </p>
         </div>
@@ -37,7 +37,10 @@ const UserPassword = () => {
           />
           <Button
             onClick={() =>
-              openDialog("createPassword", { type: "change_email_address" })
+              openDialog("createPassword", {
+                type: "change_email_address",
+                email: "",
+              })
             }
             size={"lg"}
             type="button"
@@ -50,7 +53,7 @@ const UserPassword = () => {
       <Separator className="bg-gray-200" />
 
       {/* Actions */}
-      <div className="flex justify-end gap-3">
+      <div className="flex sm:justify-end justify-center gap-3">
         <Button
           size={"lg"}
           type="button"
@@ -60,7 +63,10 @@ const UserPassword = () => {
         </Button>
         <Button
           onClick={() =>
-            openDialog("createPassword", { type: "send_password_link" })
+            openDialog("createPassword", {
+              type: "send_password_link",
+              email: "",
+            })
           }
           type="button"
           size={"lg"}

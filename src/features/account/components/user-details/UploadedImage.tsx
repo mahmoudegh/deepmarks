@@ -53,11 +53,11 @@ export const UploadedImage: FC<UploadedImageProps> = ({
         )}
       </div>
       <div className="w-full">
-        <div className="gap-3 flex items-center justify-center flex-col h-32 flex-1 rounded-lg bg-white px-3.5 py-2.5 border-gray-400 ring-0! outline-0! text-gray-900 text-[16px] leading-6 shadow-[0px_1px_2px_0px_#0A0D120D] border text-center">
+        <div className="gap-1 sm:gap-3 flex items-center justify-center flex-col h-32 flex-1 rounded-lg bg-white px-3.5 py-2.5 border-gray-400 ring-0! outline-0! text-gray-900 text-[16px] leading-6 shadow-[0px_1px_2px_0px_#0A0D120D] border text-center">
           <div className="h-10 w-10 rounded-full flex items-center justify-center bg-gray-100 border-6 border-gray-50">
             <CloudUpload className="h-5! w-5! text-gray-600" />
           </div>
-          <p className="text-sm font-normal leading-5 text-gray-600">
+          <p className="sm:text-sm text-xs font-normal leading-5 text-gray-600">
             <span
               onClick={() => fileInputRef.current?.click()}
               className="text-primary font-semibold cursor-pointer"

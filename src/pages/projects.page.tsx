@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Projects } from "@/features/projects/components/data";
 import ProjectCard from "@/features/projects/components/ProjectCard";
 import { Plus } from "lucide-react";
@@ -8,11 +9,14 @@ const ProjectsPage: FC = () => {
   return (
     <div className="bg-[#FDFDFD]">
       {/* Header */}
-      <div className="flex justify-between items-start">
+      <div className="flex sm:flex-row flex-col sm:justify-between gap-4 sm:gap-0 items-start">
         <div>
-          <h3 className="text-gray-900 text-[30px] leading-9.5 font-semibold">
-            Projects
-          </h3>
+          <div className="flex w-full items-center gap-2">
+            <SidebarTrigger className="cursor-pointer md:hidden main-sidebar-trigger" />
+            <h3 className="text-gray-900 font-semibold text-[30px] leading-8 mb-1">
+              Projects
+            </h3>
+          </div>
           <p className="text-gray-600 text-sm leading-5">
             Manage your projects and create new business names for your brand
             here
