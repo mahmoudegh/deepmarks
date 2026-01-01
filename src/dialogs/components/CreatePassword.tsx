@@ -46,7 +46,7 @@ const CreatePassword = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const shouldValidateEmail = dialogData?.type !== "send_password_link";
+    const shouldValidateEmail = dialogData !== "send_password_link";
 
     if (!validateForm(shouldValidateEmail)) return;
 
@@ -98,7 +98,7 @@ const CreatePassword = () => {
             </Label>
 
             <Input
-              disabled={dialogData?.type === "send_password_link"}
+              disabled={dialogData === "send_password_link"}
               value={email}
               onChange={(e) => handleEmailChange(e.target.value)}
               className={`rounded-lg h-11 bg-white px-3.5 py-2.5  ring-0! outline-0! text-gray-900 text-[16px] leading-6 shadow-[0px_1px_2px_0px_#0A0D120D] ${

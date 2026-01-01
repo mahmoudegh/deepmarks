@@ -56,7 +56,7 @@ const DomainCard = ({ data, isFavPage, path }: CardProps) => {
       <div className={styles["card__buttons"]}>
         {isFavPage && (
           <Button
-            onClick={() => openDialog("buyDomain", data)}
+            onClick={() => openDialog("buyDomain", data.domain_name)}
             className={`${styles["buy__domain"]} bg-primary`}
           >
             Buy domain

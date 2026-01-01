@@ -30,7 +30,7 @@ const DidYouBuy = () => {
 
         <div>
           <h3 className="text-gray-900 font-semibold leading-7 text-[18px]">
-            {`Did you buy a domain for ${dialogData?.domain_name}?`}
+            {`Did you buy a domain for ${dialogData}?`}
           </h3>
           <p className="text-gray-600 leading-5 text-[14px]">
             If you’ve purchased any relevant domains to this name, click yes
@@ -50,7 +50,7 @@ const DidYouBuy = () => {
             <Button
               onClick={() => {
                 closeDialog();
-                openDialog("enterDomain", dialogData?.domain_name);
+                openDialog("enterDomain", dialogData);
               }}
               className="text-white text-[16px] font-semibold leading-6 rounded-lg bg-primary py-2.5 px-[18px] border border-gray-300 cursor-pointer shadow-[0px_1px_2px_0px_#0A0D120D] hover:bg-primary"
               size={"lg"}

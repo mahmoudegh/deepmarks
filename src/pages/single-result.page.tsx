@@ -42,7 +42,7 @@ const SingleResultsPage: FC = () => {
               </p>
               <div className="flex items-center gap-3">
                 <Button
-                  onClick={() => openDialog("buyDomain", item)}
+                  onClick={() => openDialog("buyDomain", item.domain_name)}
                   className="h-12 w-fit text-white cursor-pointer rounded-lg border border-[#00005C] py-3 px-5 gap-2 items-center justify-center text-[16px] font-semibold leading-6 bg-primary shadow-[0px 1px 2px 0px #0a0d120d]"
                 >
                   Buy domain
